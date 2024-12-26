@@ -110,6 +110,9 @@ namespace switcher {
             //13-15 misc
             case 13: {
                 m_player1->m_isPlatformer = !m_player1->m_isPlatformer;
+#ifdef GEODE_IS_ANDROID
+                m_uiLayer->togglePlatformerMode(m_player1->m_isPlatformer);
+#endif
                 break;
             }
             case 14: {
