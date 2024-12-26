@@ -8,6 +8,9 @@
 	},
 	"id": "capeling.gamemode-switcher",
 	"name": "Gamemode Swapper",
+	"links": {
+		"source": "https://github.com/Capeling/gamemode-switcher"
+	},
 	"version": "v1.0.6",
 	"developer": "Capeling",
 	"description": "Allows you to edit your player aspects!",
