@@ -7,15 +7,37 @@
 		"ios": "2.2074"
 	},
 	"id": "capeling.gamemode-switcher",
-	"name": "gamemode-switcher",
-	"version": "v1.0.0",
+	"name": "Gamemode Swapper",
+	"version": "v1.0.6",
 	"developer": "Capeling",
-	"description": "",
+	"description": "Allows you to edit your player aspects!",
 	"dependencies": [
 		{
 			"id": "geode.node-ids",
 			"version": ">=1.18.0",
 			"importance": "required"
 		}
+	],
+	"resources": {
+		"spritesheets": {
+			"SwitcherSheet_01": [
+				"resources/SwitcherSheet_01/*.png"
+			]
+		}
+	},
+	"incompatibilities": [
+		{
+			"id": "capeling.gamemode_picker",
+			"importance": "superseded",
+			"version": "*"
+		}
+	],
+	"tags": [
+		"gameplay",
+		"interface",
+		"customization",
+		"cheats",
+		"offline",
+		"utility"
 	]
 }
