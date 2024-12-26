@@ -7,7 +7,7 @@ namespace switcher {
 
     SwitcherPopup* SwitcherPopup::create() {
         SwitcherPopup* ret = new SwitcherPopup();
-        if(ret->initAnchored(400, 240, "GE_square02.png")) {
+        if(ret->initAnchored(400, 240, "geode.loader/GE_square02.png")) {
             ret->autorelease();
             return ret;
         }
@@ -37,8 +37,8 @@ namespace switcher {
         m_miscMenu->setLayout(RowLayout::create()->setGap(15));
         m_mainLayer->addChildAtPosition(m_miscMenu, Anchor::Center, ccp(0, -50));
 
-        m_localGamemodeState = HookPlayLayer::get()->getCurrentPlayerState();
-        m_localSpeedState = HookPlayLayer::get()->getCurrentBoostState();
+        //m_localGamemodeState = HookPlayLayer::get()->getCurrentPlayerState();
+        //m_localSpeedState = HookPlayLayer::get()->getCurrentBoostState();
 
         m_gamemodeBtns[0] = createGamemode("gj_iconBtn_on_001.png", "gj_iconBtn_off_001.png", 0);
         m_gamemodeBtns[1] = createGamemode("gj_shipBtn_on_001.png", "gj_shipBtn_off_001.png", 1);

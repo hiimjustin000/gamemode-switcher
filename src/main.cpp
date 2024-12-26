@@ -17,8 +17,7 @@ namespace switcher {
             }
 
             auto button = CCMenuItemExt::createSpriteExtraWithFrameName("GJ_editModeBtn_001.png", 0.675f, [=](CCObject*) {
-                auto thing = switcher::SwitcherPopup::create();
-                thing->show();
+                switcher::SwitcherPopup::create()->show();
             });
             button->setID("gamemode-editor-button"_spr);
             rightMenu->addChild(button);

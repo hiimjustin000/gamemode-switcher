@@ -28,7 +28,6 @@ namespace switcher {
 
         void updateGamemodeButtons();
         void updateSpeedButtons();
-        //void updateMiscButtons();
 
         CCMenuItemSpriteExtra* createGamemode(const char* spriteOn, const char* spriteOff, int action);
         CCMenuItemSpriteExtra* createSpeed(const char* sprite, int action);
