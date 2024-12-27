@@ -14,6 +14,11 @@
 	"version": "v1.0.7",
 	"developer": "Capeling",
 	"description": "Allows you to edit your player aspects!",
+	"api": {
+		"include": [
+			"include/**/*.hpp"
+		]
+	},
 	"dependencies": [
 		{
 			"id": "geode.node-ids",

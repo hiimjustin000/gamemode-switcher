@@ -10,6 +10,6 @@
         #define SWITCHER_DLL __declspec(dllimport)
     #endif
 #else
-    #define SWITCHER_DLL
+    #define SWITCHER_DLL __attribute__((visibility("default")))
 #endif
 #endif
