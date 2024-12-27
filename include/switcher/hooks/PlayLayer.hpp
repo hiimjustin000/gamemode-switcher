@@ -6,7 +6,7 @@
 
 namespace switcher {
 
-    struct HookPlayLayer : geode::Modify<HookPlayLayer, PlayLayer> {
+    struct SWITCHER_DLL HookPlayLayer : geode::Modify<HookPlayLayer, PlayLayer> {
         struct Fields {
             bool m_portalsEnabled = true;
         };
