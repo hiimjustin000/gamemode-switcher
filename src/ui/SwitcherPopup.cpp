@@ -58,6 +58,8 @@ namespace switcher {
         m_miscBtns[0] = createMisc("platOn.png"_spr, "platOff.png"_spr, 13);
         m_miscBtns[1] = createMisc("sizeOn.png"_spr, "sizeOff.png"_spr, 14);
         m_miscBtns[2] = createMisc("gravOn.png"_spr, "gravOff.png"_spr, 15);
+        m_miscBtns[3] = createMisc("reverseOn.png"_spr, "reverseOff.png"_spr, 16);
+        m_miscBtns[4] = createMisc("portalOn.png"_spr, "portalOff.png"_spr, 17);
 
         for(CCMenuItemSpriteExtra* btn : m_gamemodeBtns) {
             if(!btn) continue;
@@ -139,6 +141,8 @@ namespace switcher {
             case 13: ret->toggle(HookPlayLayer::get()->m_player1->m_isPlatformer); break;
             case 14: ret->toggle(HookPlayLayer::get()->m_player1->m_vehicleSize == 0.6f); break;
             case 15: ret->toggle(HookPlayLayer::get()->m_player1->m_isUpsideDown); break;
+            case 16: ret->toggle(HookPlayLayer::get()->m_player1->m_isGoingLeft); break;
+            case 17: ret->toggle(HookPlayLayer::get()->m_fields->m_portalsEnabled); break;
             default: ret->toggle(false); break;
         }
         return ret;

@@ -1,4 +1,7 @@
 # Changelog
+## v1.0.7
+- Added reverse player button
+- Added toggle portals button (removes functionality from portals, does not delete them from the level)
 ## v1.0.6
 - Updated for 2.2074
 - Complete rewrite

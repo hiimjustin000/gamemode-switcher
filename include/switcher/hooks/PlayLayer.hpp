@@ -7,10 +7,14 @@
 namespace switcher {
 
     struct HookPlayLayer : geode::Modify<HookPlayLayer, PlayLayer> {
+        struct Fields {
+            bool m_portalsEnabled = true;
+        };
+
         int getCurrentPlayerState();
         int getCurrentBoostState();
 
-        void performActionsOnPlayer(std::array<int, 5>& actions);
+        void performActionsOnPlayer(std::array<int, 7>& actions);
         inline void performActionOnPlayer(int action);
 
         static HookPlayLayer* get();

@@ -33,7 +33,7 @@ namespace switcher {
         return static_cast<HookPlayLayer*>(GameManager::get()->m_playLayer);
     }
 
-    void HookPlayLayer::performActionsOnPlayer(std::array<int, 5>& actions) {
+    void HookPlayLayer::performActionsOnPlayer(std::array<int, 7>& actions) {
         for(int action : actions) {
             if(action == -1) continue;
             performActionOnPlayer(action);
@@ -107,7 +107,7 @@ namespace switcher {
                 break;
             }
 
-            //13-15 misc
+            //13-17 misc
             case 13: {
                 m_player1->m_isPlatformer = !m_player1->m_isPlatformer;
 #ifdef GEODE_IS_ANDROID
@@ -121,6 +121,14 @@ namespace switcher {
             }
             case 15: {
                 m_player1->flipGravity(!m_player1->m_isUpsideDown, true);
+                break;
+            }
+            case 16: {
+                m_player1->doReversePlayer(!m_player1->m_isGoingLeft);
+                break;
+            }
+            case 17: {
+                m_fields->m_portalsEnabled = !m_fields->m_portalsEnabled;
                 break;
             }
         }

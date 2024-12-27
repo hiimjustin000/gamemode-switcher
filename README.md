@@ -5,3 +5,4 @@ Git repository for Gamemode Swapper!
 
 ## Credits
 - [Dasshu](https://dasshu.dev/) for the logo
+- [availax](https://availax.xyz/) for the mod textures
